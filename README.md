@@ -62,7 +62,7 @@ Each square is interactive — hover to see which week it represents.
 2. **Navigate to the project directory**:
 
    ```bash
-   cd life-in-weeks
+   cd Life_counter
    ```
 3. **Open `index.html` in your browser**:
 
