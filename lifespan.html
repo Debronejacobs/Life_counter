@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life in Weeks</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="theme-toggle" onclick="toggleTheme()">🌙</div>
+    
+    <div class="container">
+        <div class="header">
+            <h1>Life in Weeks</h1>
+            <p>Visualize the precious weeks of your life</p>
+        </div>
+
+        <div class="input-section">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="birthdate">Date of Birth</label>
+                    <input type="date" id="birthdate" required>
+                </div>
+                <div class="form-group">
+                    <label for="lifespan">Expected Lifespan (years)</label>
+                    <select id="lifespan">
+                        <option value="70">70 years</option>
+                        <option value="75">75 years</option>
+                        <option value="80" selected>80 years</option>
+                        <option value="85">85 years</option>
+                        <option value="90">90 years</option>
+                         <option value="100">100 years</option>
+                    </select>
+                </div>
+            </div>
+            <div style="text-align: center;">
+                <button class="calculate-btn" onclick="calculateWeeks()">Visualize My Life</button>
+            </div>
+        </div>
+
+        <div class="results-section" id="results">
+            <div class="stats-grid">
+                <div class="stat-card lived">
+                    <div class="stat-number" id="weeksLived">0</div>
+                    <div class="stat-label">Weeks Lived</div>
+                </div>
+                <div class="stat-card remaining">
+                    <div class="stat-number" id="weeksRemaining">0</div>
+                    <div class="stat-label">Weeks Remaining</div>
+                </div>
+                <div class="stat-card percentage">
+                    <div class="stat-number" id="percentageLived">0%</div>
+                    <div class="stat-label">Life Completed</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="visualization-section" id="visualization">
+            <div class="legend">
+                <div class="legend-item">
+                    <div class="legend-color lived-color"></div>
+                    <span>Weeks Lived</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color remaining-color"></div>
+                    <span>Weeks Remaining</span>
+                </div>
+            </div>
+            <div class="weeks-grid" id="weeksGrid"></div>
+        </div>
+
+        <div class="quote-section" id="quote">
+            "The trouble is, you think you have time." — Buddha
+        </div>
+    </div>
+   <script src="script.js"></script>
+</body>
+</html>
